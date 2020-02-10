@@ -1,0 +1,151 @@
+@h:80px;
+.user{
+  .app{
+    width: 132px;
+    height: @h;
+    line-height: @h;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none; 
+    &:hover{
+     border-color:  #ccc;
+     .drop-down{
+       display: block;
+     }
+     .el-icon-caret-bottom{
+       transform: rotateZ(180deg);
+     }
+    }
+    .phone{
+      display: inline-block;
+      width: 15px;
+      height: 24px;
+      vertical-align: middle;
+      background-image: url('../../../img/phone.png');
+    }
+    .down{
+      margin:0 4px;
+    }
+    .el-icon-caret-bottom{
+      transform: rotateZ(0deg);
+      transition: transform 0.5s;
+    }
+    .drop-down{
+      display: none;
+      position: absolute;
+      left: -1px;
+      width: 132px;
+      margin: -1px 0 0 0px;
+      height: 166px;
+      box-sizing: border-box;
+      background-image: url('../../../img/qr-code.png');
+      background-repeat: no-repeat;
+      background-position: 50% 20%;
+      border: 1px solid #ddd;
+      border-top-color: #fff;
+      font-size: 14px;
+      text-align: center;
+      .down-app{
+        color: #000;
+        margin-top: 77px;
+      }
+      .discount{
+        color: #999;
+        margin-top:-58px;
+      }
+    }
+  }
+  .seach{
+    width: 220px;
+    height: @h;
+    margin:0 10px;
+    .form{
+      width: 220px;
+      height: 40px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      padding-left:0 ;
+      position: relative;
+      background-color: #ccc;
+    }
+    input{
+      width: 158px;
+      height: 38px;
+      padding-right: 20px;
+      background-color:transparent;
+    }
+    .seach-icon {
+      position: absolute;
+      background-color: #EF4238;
+      width: 40px;
+      height: 40px;
+      right: -1px;
+      top: -1px;
+      vertical-align: bottom;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bolder;
+    }
+  }
+  .user{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    &:hover{
+      .dorp-login{
+        display: block;
+      }
+      .el-icon-caret-bottom{
+        transform: rotateZ(180deg);
+      }
+      .user-info{
+        border: 1px solid #ccc;
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    .user-info{
+      height: 80px;
+      width: 80px;
+      box-sizing: border-box;
+      padding: 20px 0;
+      border: 1px solid #fff;
+      border-top: none;
+      border-bottom: none;
+      a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        vertical-align: middle;
+        img{
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .el-icon-caret-bottom{
+        transition: transform 0.5s;
+      }
+    }
+    .dorp-login{
+      display: none;
+      position: absolute;
+      top: 79px;
+      width: 80px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #cccccc;
+      border-top-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+}

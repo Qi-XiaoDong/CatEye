@@ -1,0 +1,39 @@
+.footer{
+  margin-top: 82px;
+  padding: 56px 0;
+  height: 374px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #262426;
+  text-align: center;
+  color: #cccccc;
+  p{
+    line-height: 1.5;
+    a{
+      &.line::after{
+        content: "|";
+        display: inline-block;
+        margin-left: 10px;
+        padding-right:  10px;
+      }
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  .on{
+    .gap{
+      margin-left: 20px;
+    }
+    a{
+      display: inline-block;
+      color: #ef4238;
+    }
+  }
+  .footer-img{
+    img{
+      margin: 20px 20px;
+    };
+  }
+
+}
