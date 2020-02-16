@@ -1,0 +1,47 @@
+@reyin:#ef4238;
+@release:#2D98f3;
+
+.home-title{
+  &.release{
+    color: #2D98f3;
+  }
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  
+  line-height: 40px;
+  padding: 20px 0;
+  color: @reyin;
+  .item-title{
+    font-size: 26px;
+    font-weight: 400;
+    color: inherit;
+    .number{
+      margin-left:10px;
+      &::before{
+        content: "(";
+      }
+      &::after{
+        content: "部)";
+      }
+    }
+  }
+  .more{ 
+    
+
+    a{
+      font-size: 14px;
+      color:inherit;
+      font-weight: bolder;
+      &:hover{
+        text-decoration: underline;
+      }
+      
+    }
+    .el-icon-arrow-right{
+      font-size: 14px;
+      font-weight: bolder;
+      color: inherit;
+    }
+  }
+}

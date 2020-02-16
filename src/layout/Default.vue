@@ -2,11 +2,15 @@
 <div class="default-page">
   <!-- 网站通用页面，上中下布局 -->
   <el-container>
+
     <el-header style="height:'';padding:0">
       <my-header/>
     </el-header>
+<!--  -->
+    <el-main style="height:'';padding:0">
+      <router-view/>
+    </el-main>
 
-    <el-main style="height:'';padding:0">Main</el-main>
     <el-footer style="height:'';padding:0">
       <my-footer/>
     </el-footer>
@@ -19,6 +23,7 @@
 </template>
   
 <script>
+
 import myHeader from '@/components/header/index.vue';
 import myFooter from '@/components/footer/index.vue';
 export default {

@@ -1,0 +1,104 @@
+.all(@w:100%;@h:220px){
+  display: block;
+  height: @h;
+  width: @w;
+}
+.movie-info{
+  width: 100%;
+  .movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .item{
+      &:nth-of-type(8){
+        margin-top: 30px;
+      } 
+      &:nth-of-type(5){
+        margin-top: 30px;
+      }
+        
+      &:nth-of-type(6){
+        margin-top: 30px;
+      } 
+      &:nth-of-type(7){
+        margin-top: 30px;
+      }
+      &.hot_one:nth-of-type(4){
+        margin-top: 30px;
+      }
+      .item-box{
+        min-height: 220px;
+        background-color: #FFF;
+        box-sizing: border-box;
+        border: 1px solid #eee;
+        &.enter:hover{
+          box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07)
+        }
+
+        .movie-img{
+            .all();
+            a{
+              .all();
+              img{
+              .all();
+              }
+            }
+        }
+        .buy-tickets{
+          .all(100%,40px);
+          
+          box-sizing: border-box;
+          a{
+            .all(100%, 40px);
+            line-height: 40px;
+            font-size: 14px;
+            color: #999;
+
+            &:hover{
+              color: #fff;
+              background-color: #ef4238;
+              
+            }
+          }
+        }
+        .miss-see{
+            padding-left: 10px;
+            line-height: 34px;
+            height: 34px;
+            text-align: left;
+            background-color: #fbfbfb;
+            span{
+              color: #ffb400;
+              font-size: 14px;
+              &::after{
+                content: "人想看";
+              }
+            }
+            
+        }
+        .beforehand{
+          height: 39px;
+          line-height: 39px;
+          box-sizing: border-box;
+          a{
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            color: #999;
+            font-size: 14px;
+            &.trailer{
+              box-sizing: border-box;
+              border-right: 1px dotted #E5e5e5;
+            }
+          }
+        }
+      }
+      .up-time{
+        height: 34px;
+        line-height: 34px;
+        color: #999;
+        font-size: 14px;
+      }
+    }
+  }
+}

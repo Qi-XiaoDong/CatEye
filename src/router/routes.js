@@ -1,11 +1,18 @@
 import Default from '../layout/Default.vue';
-
+import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Default',
     component: Default,
+    children:[
+      {
+        path: 'home',
+        name: 'home',
+        component: Home
+      }
+    ]
 
   },
 
